@@ -3,9 +3,7 @@
     if(isset($_POST['buscador']) && strlen($_POST['filtro']) >= 1) {
         $texto_buscador = trim($_POST['filtro']);
         $consulta = "SELECT * FROM libros WHERE titulo LIKE '%$texto_buscador%'";
-    } else if(isset($_POST['buscador']) && strlen($_POST['filtro']) < 1) {
-        $consulta = "SELECT * FROM libros";
-    } else {
+    }else {
         $consulta = "SELECT * FROM libros";
     }
     $resultado = mysqli_query($con, $consulta);
