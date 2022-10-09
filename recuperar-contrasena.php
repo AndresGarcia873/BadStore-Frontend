@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="login" style="width:450px;">
-        <a href="index.html" class="btn btn-outline-secondary btn-sm">
+        <a href="index.php" class="btn btn-outline-secondary btn-sm">
             <i class="bi bi-arrow-left fs-3"></i>
         </a>
         <h1 class="text-center">¿Olvido su Contraseña?</h1>

@@ -16,7 +16,7 @@
     <div class="login">
         <h1 class="text-center">Iniciar Sesión</h1>
         <hr>
-        <form class="needs-validation" action="">
+        <form class="needs-validation" method="POST">
             <div class="form-group was-validated">
                 <label class="form-label" for="correo">Correo:</label>
                 <div class="input-group mb-3">
@@ -39,16 +39,20 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="recuperar-contrasena.html" class="link-info fs-6 text-decoration-none">¿Olvido su contraseña?</a>
+                <a href="recuperar-contrasena.php" class="link-info fs-6 text-decoration-none">¿Olvido su contraseña?</a>
             </div>
             <div class="form-group text-center">
                 <input class="form-check-input" type="checkbox" name="check" id="check">
                 <label class="form-check-label" for="check">Recuerdame</label>
             </div>
 
-            <a href="inicio.html" class="btn btn-success btn-lg w-100">Iniciar Sesión</a>
-            <a href="registro.html" class="btn btn-primary btn-lg w-100 mt-3">Registrarse</a>
+            <input class="btn btn-success btn-lg w-100" name="inicio" type="submit" value="Iniciar Sesión">
+            <a href="registro.php" class="btn btn-primary btn-lg w-100 mt-3">Registrarse</a>
         </form>
+        <hr>
+        <?php
+            include("iniciar_sesion.php");
+        ?>
     </div>
 </body>
 </html>

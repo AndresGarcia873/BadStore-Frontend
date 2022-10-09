@@ -32,7 +32,7 @@
                 <a class="nav-link" href="#">Qué hay de nuevo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Firma nuestro libro</a>
+                <a class="nav-link" href="consulta_libros.php">Libros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pedidos anteriores</a>
@@ -44,7 +44,7 @@
                 <a class="nav-link" href="#">Mi cuenta</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Salir</a>
+                <a class="nav-link" href="index.php">Salir</a>
               </li>
             </ul>
             
@@ -53,7 +53,7 @@
     </nav>
     <main class="flex-shrink-0">
         <h1 class="text-center">Bienvenido a Bad Store</h1>
-        <img src="img/bienvenida.svg" alt="Imagen Bienvenida" title="Imagen Bienvenida">
+        <img src="img/bienvenida.svg" alt="Imagen Bienvenida" title="Imagen Bienvenida">    
     </main>
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->

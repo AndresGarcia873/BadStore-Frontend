@@ -14,12 +14,12 @@
 </head>
 <body>
     <div class="login">
-        <a href="index.html" class="btn btn-outline-secondary btn-sm">
+        <a href="index.php" class="btn btn-outline-secondary btn-sm">
             <i class="bi bi-arrow-left fs-3"></i>
         </a>
         <h1 class="text-center">Registrarse</h1>
         <hr>
-        <form class="needs-validation" action="">
+        <form class="needs-validation" method="POST">
             <div class="form-group was-validated">
                 <label class="form-label" for="nombre">Nombre:</label>
                 <input class="form-control icono-usuario" type="text" placeholder="Introduzca Su Nombre" name="nombre" id="nombre" required title="Nombre">
@@ -28,9 +28,12 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group was-validated">
                 <label class="form-label" for="apellido">Apellido:</label>
-                <input class="form-control icono-usuario" type="text" placeholder="Introduzca Su Apellido" name="apellido" id="apellido"  title="Apellido">
+                <input class="form-control icono-usuario" type="text" placeholder="Introduzca Su Apellido" name="apellido" id="apellido" required title="Apellido">
+                <div class="invalid-feedback">
+                    Por Favor Introduzca Su Apellido
+                </div>
             </div>
 
             <div class="form-group was-validated">
@@ -51,7 +54,7 @@
             
             <div class="form-group was-validated">
                 <label class="form-label" for="repetir-contrasena">Repetir Contraseña:</label>
-                <input class="form-control icono-contrasena" type="password" placeholder="Introduzca Su Contraseña" name="repetir-contrasena" id="repetir-contrasena" required title="Repetir Contraseña">
+                <input class="form-control icono-contrasena" type="password" placeholder="Introduzca Su Contraseña" name="repetir_contrasena" id="repetir-contrasena" required title="Repetir Contraseña">
                 <div class="invalid-feedback">
                     Por Favor Introduzca Su Contraseña
                 </div>
@@ -71,8 +74,12 @@
                 </div>
             </div>
 
-            <input class="btn btn-primary btn-lg w-100 mt-3" type="button" value="Registrarse">
+            <input class="btn btn-primary btn-lg w-100 mt-3" name="registro" type="submit" value="Registrarse">
         </form>
+        <hr>
+        <?php
+            include("registrar.php");
+        ?>
     </div>
 </body>
 </html>
